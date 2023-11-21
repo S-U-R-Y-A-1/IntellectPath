@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Substreams</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-image: url('bg.jpg');
+        }
+        h1 {
+            text-align: center;
+            color: #e0e0e0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        li {
+            margin: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            flex: 0 0 45%; /* Adjust the flex value based on your preference */
+            position: relative;
+        }
+        li:hover {
+            background-color: #e0e0e0;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .tooltip {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1;
+        }
+        li:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Choose Computer Science Substreams</h1>
+
+    <ul>
+        <li><label><input type="checkbox" value="Artificial Intelligence"> Artificial Intelligence <span class="tooltip">Focuses on creating intelligent agents capable of mimicking human cognitive functions, such as problem-solving, learning, and decision-making.</span>
+        </label></li>
+        <li><label><input type="checkbox" value="Machine Learning"> Machine Learning<span class="tooltip">Involves designing algorithms that enable computers to learn from data, recognize patterns, and make predictions without explicit programming.</span></label></li>
+        <li><label><input type="checkbox" value="Computer Vision"> Computer Vision<span class="tooltip">Concerned with teaching machines to interpret and understand visual information from the world, enabling applications like image and video analysis.</span></label></li>
+        <li><label><input type="checkbox" value="Natural Language Processing"> Natural Language Processing<span class="tooltip">Explores techniques for computers to understand, interpret, and generate human language, facilitating communication between machines and humans.</span></label></li>
+        <li><label><input type="checkbox" value="Robotics"> Robotics<span class="tooltip">Combines computer science and engineering to design, construct, operate, and use robots for various applications, from manufacturing to healthcare.</span></label></li>
+        <li><label><input type="checkbox" value="Data Science"> Data Science<span class="tooltip">Involves extracting valuable insights and knowledge from large sets of structured and unstructured data, using statistical and computational methods.</span></label></li>
+        <li><label><input type="checkbox" value="Big Data Analytics"> Big Data Analytics<span class="tooltip">Focuses on processing and analyzing massive datasets to reveal patterns, trends, and associations, often using distributed computing frameworks.</span></label></li>
+        <li><label><input type="checkbox" value="Database Management"> Database Management<span class="tooltip">Concerned with the design, implementation, and maintenance of databases to efficiently store, retrieve, and manage data.</span></label></li>
+        <li><label><input type="checkbox" value="Software Engineering"> Software Engineering<span class="tooltip">Encompasses the systematic design, development, testing, and maintenance of software applications and system</span></label></li>
+        <li><label><input type="checkbox" value="Web Development"> Web Development<span class="tooltip">Involves building and maintaining websites and web applications, covering both front-end and back-end development.</span></label></li>
+        <li><label><input type="checkbox" value="Mobile App Development"> Mobile App Development<span class="tooltip"> Focuses on creating applications for mobile devices, addressing platform-specific challenges and providing seamless user experiences.</span></label></li>
+        <li><label><input type="checkbox" value="Cloud Computing"> Cloud Computing<span class="tooltip">Revolutionizes the way computing resources are delivered and consumed, enabling scalable and flexible services over the internet.</span></label></li>
+        <li><label><input type="checkbox" value="Cybersecurity"> Cybersecurity<span class="tooltip"> Concentrates on protecting computer systems, networks, and data from unauthorized access, attacks, and damage.</span></label></li>
+        <li><label><input type="checkbox" value="Network Administration"> Network Administration<span class="tooltip">Involves the management, configuration, and optimization of computer networks to ensure efficient and secure communication.</span></label></li>
+        <li><label><input type="checkbox" value="Internet of Things (IoT)"> Internet of Things (IoT)</label></li>
+        <li><label><input type="checkbox" value="Game Development"> Game Development</label></li>
+        <li><label><input type="checkbox" value="Virtual Reality (VR) Development"> Virtual Reality (VR) Development</label></li>
+        <li><label><input type="checkbox" value="Augmented Reality (AR) Development"> Augmented Reality (AR) Development</label></li>
+        <li><label><input type="checkbox" value="Human-Computer Interaction"> Human-Computer Interaction</label></li>
+        <li><label><input type="checkbox" value="User Experience (UX) Design"> User Experience (UX) Design</label></li>
+        <li><label><input type="checkbox" value="User Interface (UI) Design"> User Interface (UI) Design</label></li>
+        <li><label><input type="checkbox" value="Computer Graphics"> Computer Graphics</label></li>
+        <li><label><input type="checkbox" value="Compiler Design"> Compiler Design</label></li>
+        <li><label><input type="checkbox" value="Operating Systems"> Operating Systems</label></li>
+        <li><label><input type="checkbox" value="Embedded Systems"> Embedded Systems</label></li>
+        <li><label><input type="checkbox" value="Distributed Systems"> Distributed Systems</label></li>
+        <li><label><input type="checkbox" value="Computer Architecture"> Computer Architecture</label></li>
+        <li><label><input type="checkbox" value="High-Performance Computing"> High-Performance Computing</label></li>
+        <li><label><input type="checkbox" value="Quantum Computing"> Quantum Computing</label></li>
+        <li><label><input type="checkbox" value="Cryptography"> Cryptography</label></li>
+        <li><label><input type="checkbox" value="Information Retrieval"> Information Retrieval</label></li>
+        <li><label><input type="checkbox" value="Bioinformatics"> Bioinformatics</label></li>
+        <li><label><input type="checkbox" value="Computational Biology"> Computational Biology</label></li>
+        <li><label><input type="checkbox" value="Computational Linguistics"> Computational Linguistics</label></li>
+        <li><label><input type="checkbox" value="Parallel Computing"> Parallel Computing</label></li>
+        <li><label><input type="checkbox" value="Mobile Computing"> Mobile Computing</label></li>
+        <li><label><input type="checkbox" value="Wearable Computing"> Wearable Computing</label></li>
+        <li><label><input type="checkbox" value="Social Computing"> Social Computing</label></li>
+        <li><label><input type="checkbox" value="Data Mining"> Data Mining</label></li>
+        <li><label><input type="checkbox" value="Knowledge Discovery in Databases (KDD)"> Knowledge Discovery in Databases (KDD)</label></li>
+        <li><label><input type="checkbox" value="Computer Networks"> Computer Networks</label></li>
+        <li><label><input type="checkbox" value="Wireless Communication"> Wireless Communication</label></li>
+        <li><label><input type="checkbox" value="Edge Computing"> Edge Computing</label></li>
+        <li><label><input type="checkbox" value="Cloud Security"> Cloud Security</label></li>
+        <li><label><input type="checkbox" value="DevOps"> DevOps</label></li>
+        <li><label><input type="checkbox" value="Continuous Integration/Continuous Deployment (CI/CD)"> Continuous Integration/Continuous Deployment (CI/CD)</label></li>
+        <li><label><input type="checkbox" value="Agile Software Development"> Agile Software Development</label></li>
+        <li><label><input type="checkbox" value="Software Testing and Quality Assurance"> Software Testing and Quality Assurance</label></li>
+        <li><label><input type="checkbox" value="Computer Ethics"> Computer Ethics</label></li>
+        <li><label><input type="checkbox" value="Quantum Information Science"> Quantum Information Science</label></li>
+    </ul>
+
+    <button onclick="showSelectedSubstreams()">Submit</button>
+
+    <script>
+        function showSelectedSubstreams() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            const selectedSubstreams = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+            if (selectedSubstreams.length > 0) {
+                alert('You selected: ' + selectedSubstreams.join(', '));
+                // You can replace the alert with your desired action.
+            } else {
+                alert('Please select at least one substream.');
+            }
+        }
+    </script>
+
+</body>
+</html>
